@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,18 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [PostController::class, 'home']);
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about', [PostController::class, 'about']);
 
-Route::get('/komen', function () {
-    $data=array(
-        "notelp" => "+62 8385527909",
-        "email" => "favianapta@gmail.com"
-    );
-    return view('komen',$data);
-});
+Route::get('/komen', [PostController::class, 'komen']);
