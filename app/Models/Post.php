@@ -8,11 +8,32 @@ use Illuminate\Support\Collection;
 
 class Post extends Model
 {
+    private static $nama="M Favian Apta Syahputra";
+
+    public static function getNama()
+    {
+        return self::$nama;
+    }
+
+
+    
     private static $email="favianapta@gmail.com";
 
     public static function getEmail()
     {
         return self::$email;
+    }
+
+    public static function getWelcome()
+    {
+        $data = collect(['Welcome']);
+        return $data->first();
+    }
+
+    public static function getHello()
+    {
+        $data = collect(['Hello']);
+        return $data->first();
     }
 
     // private static $notelp="+62 xxxx";

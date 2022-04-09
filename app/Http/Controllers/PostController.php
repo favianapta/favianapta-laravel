@@ -9,11 +9,11 @@ class PostController extends Controller
 {
     // Home
     public function home(){
-        return view('home');
-    }
-
-    public function about(){
-        return view('about');
+        $data=array(
+            "welcome" => Post::getWelcome(),
+            "hello" => Post::getHello(),
+        );
+        return view('home',$data);
     }
 
     public function komen(){

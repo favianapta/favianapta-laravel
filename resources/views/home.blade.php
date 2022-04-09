@@ -22,9 +22,9 @@
                 </nav>
             </div>
             <div class="col-md-8 offset-md-2 info">
-                <h1 class="text-center">HELLO</h1>
+                <h1 class="text-center">{{ $hello }}</h1>
                 <p class="text-center">
-                    WELCOME
+                    {{ $welcome }}
                 </p>
                 <a href="/about" class="btn btn-md text-center">SEE PROFILE</a>
             </div>

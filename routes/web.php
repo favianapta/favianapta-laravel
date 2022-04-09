@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\BiodataController;
+use App\Http\Controllers\MHomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +18,8 @@ use App\Http\Controllers\PostController;
 
 Route::get('/', [PostController::class, 'home']);
 
-Route::get('/about', [PostController::class, 'about']);
+Route::get('/about', [BiodataController::class, 'about']);
+
+//Route::get('/about', [PostController::class, 'about']);
 
 Route::get('/komen', [PostController::class, 'komen']);

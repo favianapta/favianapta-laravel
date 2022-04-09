@@ -21,10 +21,10 @@
                         <div class="d-flex flex-column align-items-center text-center">
                             <img src="img/favian.jpg" alt="" class="rounded-circle" width="150">
                             <div class="mt-3">
-                                <h4>M Favian Apta Syahputra</h4>
-                                <p class="text-secondary mb-1">D-IV Informatics Engineering</p>
-                                <p class="text-muted font-size-sm">State Polytechnic Of Malang</p>
-                                <p class="text-muted font-size-sm">2041720189</p>
+                                <h4>{{ $nama }}</h4>
+                                <p class="text-secondary mb-1">{{ $prodi }}</p>
+                                <p class="text-muted font-size-sm">{{ $poltek }}</p>
+                                <p class="text-muted font-size-sm">{{ $nim }}</p>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                             <tbody> <!--class="col-sm-9"-->
                                 <tr>
                                     <th scope="row">Full Name</th>
-                                    <td colspan="2">M Favian Apta Syahputra</td>
+                                    <td colspan="2">{{ $nama }}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Nickname</th>
